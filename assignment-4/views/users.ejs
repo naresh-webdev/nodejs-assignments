@@ -1,0 +1,24 @@
+<%- include('includes/head.ejs') %>
+
+  <!-- all main content goes here (body) -->
+  <table>
+    <thead>
+      <tr>
+        <th>S.NO</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for (user of users) { %>
+        <tr>
+          <td>
+            <%= user.id %>
+          </td>
+          <td>
+            <%= user.name %>
+          </td>
+        </tr>
+        <% } %>
+
+    </tbody>
+  </table>
